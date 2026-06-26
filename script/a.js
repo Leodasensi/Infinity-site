@@ -1,8 +1,14 @@
 function loginForm() {
-    const email = alert("oi")
+    let loginForm = document.getElementById('loginForm')
+    if (loginForm) {
+        let emailInput = document.getElementById('email')
+        let passwordInput = document.getElementById('password')
+
+        let emailError = document.getElementById('emailError');
+        let senhaError = document.getElementById('senhaError');
+
+        function validateEmail(email) {
+        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    }
+    }
 }
-list = [3][3]
-for(x=0;x<10;x++){
-list.push(x)
-}
-console.log(list[3][3])
